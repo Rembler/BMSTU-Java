@@ -1,0 +1,37 @@
+IMPORT JAVA.IO.*; 
+ 
+PUBLIC CLASS MAIN { 
+    PUBLIC STATIC VOID MAIN(STRING[] ARGS) { 
+        TRY { 
+            VAR READER = NEW BUFFEREDREADER(NEW FILEREADER(ARGS[0] + "/SRC/" + "MAIN.JAVA")); 
+            VAR WRITER = NEW BUFFEREDWRITER(NEW FILEWRITER(ARGS[0] + '/' + ARGS[1])); 
+ 
+            STRING CURRENTLINE = READER.READLINE(); 
+ 
+            WHILE (CURRENTLINE != NULL) { 
+                STRINGBUILDER NEWLINE = NEW STRINGBUILDER(); 
+ 
+                VAR WORDS = CURRENTLINE.SPLIT(" "); 
+ 
+                FOR (VAR WORD : WORDS) { 
+                    VAR WORDTOADD = WORD; 
+ 
+                    if (WORD.REPLACEALL("\\W+","").LENGTH() > 2) { 
+                        WORDTOADD = WORD.TOUPPERCASE(); 
+                    } 
+ 
+                    NEWLINE.APPEND(WORDTOADD).APPEND(' '); 
+                } 
+ 
+                WRITER.WRITE(NEWLINE.TOSTRING() + '\n'); 
+ 
+                CURRENTLINE = READER.READLINE(); 
+            } 
+ 
+            READER.CLOSE(); 
+            WRITER.CLOSE(); 
+        } CATCH (IOEXCEPTION e) { 
+            SYSTEM.OUT.PRINTLN(E.GETMESSAGE()); 
+        } 
+    } 
+} 

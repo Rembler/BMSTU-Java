@@ -1,0 +1,29 @@
+;*.oi.avaj tropmi
+
+{ niaM ssalc cilbup
+{ )sgra ][gnirtS(niam diov citats cilbup    
+{ yrt        
+;))"avaj.niaM" + "/crs/" + ]0[sgra(redaeReliF wen(redaeRdereffuB wen = redaer rav            
+;))]1[sgra + '/' + ]0[sgra(retirWeliF wen(retirWdereffuB wen = retirw rav            
+
+;)(eniLdaer.redaer = eniLtnerruc gnirtS            
+
+{ )llun =! eniLtnerruc( elihw            
+;)(redliuBgnirtS wen = eniLwen redliuBgnirtS                
+
+{ )--i ;0 => i ;1 - )(htgnel.eniLtnerruc = i tni( rof                
+;))i(tArahc.eniLtnerruc(dneppa.eniLwen                    
+}                
+
+;)'n\' + )(gnirtSot.eniLwen(etirw.retirw                
+
+;)(eniLdaer.redaer = eniLtnerruc                
+}            
+
+;)(esolc.redaer            
+;)(esolc.retirw            
+{ )e noitpecxEOI( hctac }        
+;))(egasseMteg.e(nltnirp.tuo.metsyS            
+}        
+}    
+}
